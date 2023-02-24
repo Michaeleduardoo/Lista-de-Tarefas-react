@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-icons": "^4.7.1",
+    "styled-components": "^5.3.6",
+    "uuid": "^9.0.0"
+  }
+}
