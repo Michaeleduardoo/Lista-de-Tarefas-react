@@ -89,7 +89,7 @@ export const ListItem = styled.div`
         list-style: none;
         font-size:20px ;
         color:#051937;
-    }
+    } 
 
 
 `
