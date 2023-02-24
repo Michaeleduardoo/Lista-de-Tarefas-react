@@ -7,5 +7,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Globalsty />
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
