@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 
 
 
-import { Conteiner, TodoList, Input, Button, ListItem, Trash , Check } from "./styles.js"
+import { Conteiner, TodoList, Input, Button, ListItem, Trash, Check } from "./styles.js"
 
 function App() {
 
@@ -20,11 +20,11 @@ function App() {
 
   function clickedButton() {
 
-    if(input){
-   
-    setList([...list, { id: uuid(), text: input, finished: false }])
-  
-  }
+    if (input) {
+
+      setList([...list, { id: uuid(), text: input, finished: false }])
+
+    }
 
   }
 
@@ -33,7 +33,7 @@ function App() {
 
     const newList = list.map(item => (
 
-      item.id === id ? { ... item, finished: !item.finished } : item
+      item.id === id ? { ...item, finished: !item.finished } : item
 
     ))
 
@@ -41,9 +41,9 @@ function App() {
 
   }
 
-  function deleteTask(id){
-    
-    const novList= list.filter(item => item.id !== id)
+  function deleteTask(id) {
+
+    const novList = list.filter(item => item.id !== id)
 
     setList(novList)
   }
@@ -63,23 +63,23 @@ function App() {
 
             list.length > 0 ? (
 
-            list.map(item => (
+              list.map(item => (
 
-              <ListItem isFiniched={item.finished} key={item.id} >
+                <ListItem isFiniched={item.finished} key={item.id} >
 
-                <Trash onClick={ () => endTask(item.id)}/>
+                  <Trash onClick={() => endTask(item.id)} />
 
-                <li> {item.text} </li>
+                  <li> {item.text} </li>
 
-                <Check onClick={() => deleteTask(item.id)}/>
+                  <Check onClick={() => deleteTask(item.id)} />
 
-              </ListItem>
-            ))
+                </ListItem>
+              ))
 
             ) : <h3>Não há Tarefas</h3>
           }
 
-         
+
         </ul>
 
 
