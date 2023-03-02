@@ -30,6 +30,10 @@ export const TodoList = styled.div`
         font-size: 30px;
         margin-top: 20px ;
     }
+
+    @media all and (max-width:500px){
+        width: 290px;
+    } 
     
 
 `
@@ -42,6 +46,9 @@ export const Input = styled.input`
     outline: none;
     width: 60%;
     
+    @media all and (max-width:500px){
+        width: 150px;
+    } 
 
 `
 
@@ -68,6 +75,14 @@ export const Button = styled.button`
     :active{
         opacity: 0.6;
     }
+
+
+    @media all and (max-width:500px){
+        width: 100px;
+        margin-left: 12px;
+        
+    } 
+    
 
 
 `
